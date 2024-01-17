@@ -1,0 +1,11 @@
+<ul class="list-group" >
+  <li style="width: 14%; text-align: center; border: 2px solid black; border-radius: 50px;"  
+  [class.active]="isSelected(employe)"  
+  class="list-group-item  "
+    *ngFor="let employe of myEmployes" (click)="empClick(employe.id)"
+  >
+  <button class="btn btn-info"> {{ employe.id }}  {{ employe.name }} </button> 
+  </li>
+</ul>
+
+<h5>{{value}}</h5>
